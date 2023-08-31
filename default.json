@@ -1,22 +1,22 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": [
-		"config:base"
-	],
-	"regexManagers": [
-		{
-			"fileMatch": [
-				"^Makefile$"
-			],
-			"matchStrings": [
-				"curl .*https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- .* (?<currentValue>.*?)\\n"
-			],
-			"depNameTemplate": "github.com/golangci/golangci-lint",
-			"datasourceTemplate": "go"
-		}
-	],
-	"postUpdateOptions": [
-		"gomodTidy",
-		"gomodUpdateImportPaths"
-	]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^Makefile$"
+      ],
+      "matchStrings": [
+        "curl .*https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- .* (?<currentValue>.*?)\\n"
+      ],
+      "depNameTemplate": "github.com/golangci/golangci-lint",
+      "datasourceTemplate": "go"
+    }
+  ],
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths"
+  ]
 }
