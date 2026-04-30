@@ -17,6 +17,13 @@
         "digest"
       ],
       "changelogUrl": "{{sourceUrl}}/compare/{{currentDigest}}..{{newDigest}}"
+    },
+    {
+      "description": "Ensure that dependency updates do not bump the `go` directive, and only suggests updates that stay within the `go` directive (allowing a patch bump at most)",
+      "matchManagers": [
+        "gomod"
+      ],
+      "constraintFiltering": "strict"
     }
   ],
   "regexManagers": [
