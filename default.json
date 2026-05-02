@@ -23,7 +23,7 @@
       "matchManagers": [
         "gomod"
       ],
-      "constraintFiltering": "strict"
+      "constraintsFiltering": "strict"
     }
   ],
   "regexManagers": [
