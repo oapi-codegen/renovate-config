@@ -41,5 +41,6 @@
   "postUpdateOptions": [
     "gomodTidy",
     "gomodUpdateImportPaths"
-  ]
+  ],
+  "semanticCommits": "enabled"
 }
