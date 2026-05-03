@@ -4,7 +4,16 @@ This repository contains [Shareable Config Presets](https://docs.renovatebot.com
 
 ## `user.json`
 
-For use by `oapi-codegen` users.
+For use by `oapi-codegen` users, and can be used like so:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>oapi-codegen/renovate-config:user"
+  ]
+}
+```
 
 Provides utilities to:
 
