@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Configuration to improve updates for `oapi-codegen` users",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "**/*.yaml",
+        "**/*.yml"
+      ],
+      "matchStrings": [
+        "# yaml-language-server: \\$schema=https://raw.githubusercontent.com/oapi-codegen/oapi-codegen/(?<currentValue>[^/]+)/configuration-schema.json"
+      ],
+      "depNameTemplate": "github.com/oapi-codegen/oapi-codegen/v2",
+      "datasourceTemplate": "go"
+    }
+  ]
+}
